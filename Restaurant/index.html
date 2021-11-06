@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--google font cdn-->
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Cook's Restaurant</h1>
+    <h2>a New York City eatery</h2>
+
+    <div class="first show-description">
+      <p>Spicy buffalo wings <span class="price">$14</span><br />
+      <small>Chicken wings grilled on an open flame, coated in our spicy bbq sauce and served with a small side of freshly cut organic potatoe chips accompanied with a small side of greens . </small></p>
+    </div>
+    
+    <div class="second show-description">
+      <p>Lamb Shank <span class="price">$22</span><br />
+      <small>A Mediterranean favourite slowed cooked and braised in red wine till perfection, topped with our secret gravy and served on bed of mash.</small></p>
+    </div>
+      
+    <div class="dessert show-description">
+      <p>Tiramisu<span class="price">$8</span><br />
+      <small>Coffee-flavoured Italian dessert made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.</small></p>
+    </div>
+    
+    <!--toggle the paragraph-->
+    <script>
+      $('div').on('click', function() {
+        $(this).toggleClass('show-description');
+      });
+    </script>
+    
+    
+</body>
+
+</html>
